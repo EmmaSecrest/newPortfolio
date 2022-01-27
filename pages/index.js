@@ -15,6 +15,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
+import {theme} from '../src/theme.js'
             
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
@@ -49,7 +50,7 @@ const cards = [
       liveLink: 'TODO' }
     ];
  
-const theme = createTheme();
+
 
 export default function Album() {
   return (

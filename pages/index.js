@@ -118,7 +118,7 @@ In my free time, I enjoy cooking and gaming. I am also an amateur MUA!
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Link size="small" href = {cards.gitLink}> Github Repository </Link>
+                    <Link size="small" href = {card.gitLink}> Github Repository </Link>
                     
                   </CardActions>
                 </Card>

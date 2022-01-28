@@ -139,6 +139,7 @@ In my free time, I enjoy cooking and gaming. I am also an amateur MUA!
         >
          esecrest908@gmail.com <br/>
          <Link href = 'https://www.linkedin.com/in/emma-secrest/' >LinkedIn</Link >
+         <Link href = 'https://github.com/EmmaSecrest'>Github</Link>
         </Typography>
        
       </Box>

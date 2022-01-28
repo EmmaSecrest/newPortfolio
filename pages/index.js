@@ -15,39 +15,40 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
-import {theme} from '../src/theme.js'
+// import {theme} from '../src/theme.js'
+import theme from '../src/theme'
             
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+// function Copyright() {
+//   return (
+//     <Typography variant="body2" color="text.secondary" align="center">
+//       {'Copyright © '}
+//       <Link color="inherit" href="https://mui.com/">
+//         Your Website
+//       </Link>{' '}
+//       {new Date().getFullYear()}
+//       {'.'}
+//     </Typography>
+//   );
+// }
 
 const cards = [
     { id: 1,
       name: 'Deep Dive',
-      description: 'A Redux/React application that pulls information from different subreddits and displays their content',
-      gitLink: 'https://github.com/EmmaSecrest/redditApp',
-      liveLink: 'TODO' },
+      description: 'A Redux/React application that pulls information from different subreddits and displays their content. used React, Redux libraries for state management, using react hooks, image manipulation, network requests and deployment',
+      gitLink: 'https://github.com/EmmaSecrest/redditApp'
+       },
     { id: 2,
-      name: 'TreasureSpace',
-      description: 'An e-commerce store for collectible items',
-      gitLink: 'TODO',
-      liveLink: 'TODO' },
+      name: 'Python Port scanner',
+      description: 'A Python Code that will scan an IP address to find the ports open on that system',
+      gitLink: 'https://github.com/EmmaSecrest/portScan'
+       },
     { id: 3,
-      name: 'Rambler for Reddit',
-      description: 'Front end app that browser some Reddit categories',
-      gitLink: 'TODO',
-      liveLink: 'TODO' }
+      name: 'E-Commerce backend',
+      description: 'used node and Express to create a server, boilerplate and routes with express, database creation with SQL along with some cloud computing with Heroku',
+      gitLink: 'https://github.com/EmmaSecrest/ecommerce-app-rest-api',
+       }
     ];
  
 
@@ -84,9 +85,9 @@ export default function Album() {
              Emma Secrest
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-             Hi! My name is Emma Secrest! I am a mathematician and a programmer from Indiana. I got my master's degree in mathematics in 2021. After which I recently picked up programming again.
+             Hi! My name is Emma Secrest! I am a mathematician and a programmer from Indiana. I got my master's degree in mathematics in 2021. After which I recently picked up programming again.<br/>
 
-I started my coding journey during my undergraduate years with C++. During my bachelor's, I lost my love of coding and did not discover it again until my master's, where I worked with R and Matlab. Through those languages, I rediscovered my love of coding and programming. After graduation, I dove full force into coding. I began self-studying software engineering, learning HTML, CSS, and JavaScript.
+I started my coding journey during my undergraduate years with C++. During my bachelor's, I lost my love of coding and did not discover it again until my master's, where I worked with R and Matlab. Through those languages, I rediscovered my love of coding and programming. After graduation, I dove full force into coding. I began self-studying software engineering, learning HTML, CSS, and JavaScript. <br/>
 
 In my free time, I enjoy cooking and gaming. I am also an amateur MUA!
             </Typography>
@@ -119,7 +120,7 @@ In my free time, I enjoy cooking and gaming. I am also an amateur MUA!
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Link size="small" href = {card.gitLink}> Github Repository </Link>
+                    <Link size="small" href = {card.gitLink} target="_blank" rel="noopener"> Github Repository </Link>
                     
                   </CardActions>
                 </Card>
@@ -131,7 +132,7 @@ In my free time, I enjoy cooking and gaming. I am also an amateur MUA!
       {/* Footer */}
       <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+          Contact me
         </Typography>
         <Typography
           variant="subtitle1"
@@ -139,9 +140,9 @@ In my free time, I enjoy cooking and gaming. I am also an amateur MUA!
           color="text.secondary"
           component="p"
         >
-          Something here to give the footer a purpose!
+         esecrest908@gmail.com
         </Typography>
-        <Copyright />
+       
       </Box>
       {/* End footer */}
     </ThemeProvider>

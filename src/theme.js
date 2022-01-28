@@ -14,6 +14,9 @@ const theme = createTheme({
       main: '#f50057',
     },
   },
+  typography: {
+    fontFamily: '"Maven Pro","Roboto", "Helvetica", "Arial", sans-serif',
+  },
 });
 
 export default theme;

@@ -17,6 +17,7 @@ import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 // import {theme} from '../src/theme.js'
 import theme from '../src/theme'
+import { Stack } from '@mui/material';
 
 
             
@@ -46,6 +47,19 @@ const cards = [
 
        }
     ];
+
+    const languages = ['/C++.png' ,'/python.jpeg','/JavaScript.png','/matlab.jpeg','/R.jpeg' ,'/css.png']
+
+    const styles = theme => ({
+      Card: {
+        margin: 'auto',
+        position: 'relative',
+        top: "10%"
+      },
+      Media: {
+        height: 50
+      }
+    });
  
 
 
@@ -92,7 +106,10 @@ In my free time, I enjoy cooking and gaming. I am also an amateur MUA!
         </Box>
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
-          <Grid container spacing={4}>
+          <Typography variant='h3' align='center' color="text.secondary" > Projects </Typography>
+          <Grid container spacing={3}>
+           
+           
             {cards.map((card) => (
               <Grid item key={card.id} xs={12} sm={6} md={4}>
                 <Card
@@ -122,8 +139,30 @@ In my free time, I enjoy cooking and gaming. I am also an amateur MUA!
                   </CardActions>
                 </Card>
               </Grid>
+              
             ))}
           </Grid>
+        </Container>
+        <Typography variant='h3' align='center' color="text.secondary" > Languages </Typography>
+        <Container sx={{ py: 2 }} maxWidth="s" align='center'>
+        <Grid item container justifyContent="center" sx={{mt: 6}}> // 
+         
+           <Stack direction="row" spacing={2} align="center"> 
+                  {
+                    languages.map((img) => (
+                      <Box
+                      component="img"
+                      sx={{
+                        maxHeight: { xs: 100 }, 
+                        textAlign: "center",
+                      }}
+                      alt="language"
+                      src={img}
+                    />
+                    ))
+                  }
+              </Stack>
+            </Grid>
         </Container>
       </main>
       {/* Footer */}
